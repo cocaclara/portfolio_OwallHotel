@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" >
+	<!-- iOS 사파리 줌 차단 -->
+	<meta name="HandheldFriendly" content="true">
+	<title>오월호텔</title>
+
+	
+	<link rel="stylesheet" href="css/style_basic.css">
+	<link rel="stylesheet" href="css/style_main.css">
+  <link rel="stylesheet" href="css/pignose.calendar.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/style_calender_box.css">	
+
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+		
+	<script src="https://kit.fontawesome.com/aa4acd9d65.js" crossorigin="anonymous"></script>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.touchSwipe.min.js"></script>
+  <script src="js/pignose.calendar.full.min.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<div class="header_area">
+				<h1 class="hdd">오월호텔</h1>
+				<!-- 로고 -->
+				<a href="./index.html"><img src="img/logo_w.png" alt="로고" class="header_logo"></a>
+				<!-- 태블릿 -->
+				<p class="tablet mo-menu-bar"><b class="hdd">메뉴열기</b><ion-icon name="reorder-three-outline"></ion-icon></p>
+				<!-- 모바일 -->
+				<p class="mobile mo-menu-bar"><b class="hdd">메뉴열기</b><ion-icon name="reorder-three-outline"></ion-icon></p>
+				<p class="mobile mo-close-btn"><a href="#"><b class="hdd">닫기</b></a><i class="fas regular fa-xmark"></i></p>
+
+				<!-- PC 네비게이션 -->
+				<nav class="pc tablet">
+					<ul class="gnb active">
+						<li><a href="./index_sub-themay.html">THE MAY</a></li>
+						<li><a href="#">ROOMS</a>
+							<ul class="lnb">
+								<li><a href="#">THE MAY HOUSE</a></li>
+								<li><a href="#">GARDEN HOUSE</a></li>
+								<li><a href="#">AQUA WOOD</a></li>
+								<li><a href="#">AQUA GRAY</a></li>
+								<li><a href="#">WOOD TERRACE</a></li>
+								<li><a href="#">WHITE TERRACE</a></li>
+								<li><a href="#">ORIENTAL BLUE</a></li>
+								<li><a href="#">ORIENTAL GRAY</a></li>
+							</ul>
+						</li>
+						<li><a href="#">BOOKING</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</nav>
+
+				<!-- 모바일 네비게이션 -->
+				<nav class="mobile">
+					<ul class="gnb">
+						<li><a href="./index_sub-themay.html">THE MAY</a></li>
+						<li><a href="#">ROOMS</a></li>
+						<li><a href="#">BOOKING</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+		<main>
+			<div class="main_area">
+				<!-- 메인이미지: 페이드인아웃 -->
+				<section class="sec1">
+					<h2 class="hdd">메인이미지</h2>
+					<div class="mainImg">
+						<!-- 이미지 -->
+						<ul class="imgList">
+							<li class="img1"></li>
+							<li class="img2"></li>
+							<li class="img3"></li>
+							<li class="img4"></li>
+							<li class="img5"></li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- ROOMS 객실안내 -->
+				<section class="sec2">
+					<h2>ROOMS</h2>
+					<p>기품있는 동양의 풍류와 현대적인 미니멀리즘을 동시에 만끽하며<br>
+						궁극의 휴식을 즐길 수 있습니다.</p>
+					<div class="gallery">
+						<ul>
+							<li>
+								<img src="img/the-may-house-1-779x1024.jpg" alt="THE_MAY_HOUSE">
+								<p><strong>THE MAY HOUSE</strong></p>
+								<p class="text">(square)&#183;28(py)<br>
+									Private Garden<br>
+									Tea Room</p>
+							</li><li>
+								<img src="img/garden-house-1-779x1024.jpg" alt="GARDEN_HOUSE">
+								<p><strong>GARDEN HOUSE</strong></p>
+								<p class="text">(square)&#183;23(py)<br>
+									Private Garden<br>
+									Tea Room</p>
+							</li><li>
+								<img src="img/aqua-wood-1-779x1024.jpg" alt="AQUA_WOOD">
+								<p><strong>AQUA WOOD</strong></p>
+								<p class="text">(square)INC.POOL&#183;38(py)<br>
+									Private Terrace<br>
+									Private POOL</p>
+							</li><li>
+								<img src="img/aqua-gray-1-779x1024.jpg" alt="AQUA_GRAY">
+								<p><strong>AQUA GRAY</strong></p>
+								<p class="text">(square)INC.POOL&#183;29(py)<br>
+									Private Terrace<br>
+									Private POOL</p>
+							</li><li>
+								<img src="img/wood-terrace-1-779x1024.jpg" alt="WOOD_TERRACE">
+								<p><strong>WOOD TERRACE</strong></p>
+								<p class="text">(square)&#183;20(py)<br>
+									Private Terrace</p>
+							</li><li>
+								<img src="img/white-terrace-1-779x1024.jpg" alt="WHITE_TERRACE">
+								<p><strong>WHITE TERRACE</strong></p>
+								<p class="text">(square)&#183;20(py)<br>
+									Private Terrace</p>
+							</li><li>
+								<img src="img/oriental-blue-1-779x1024.jpg" alt="ORIENTAL_BLUE">
+								<p><strong>ORIENTAL BLUE</strong></p>
+								<p class="text">(square)&#183;16(py)<br>
+									Private Terrace</p>
+							</li><li>
+								<img src="img/oriental-gray-1-779x1024.jpg" alt="ORIENTAL_GRAY">
+								<p><strong>ORIENTAL GRAY</strong></p>
+								<p class="text">(square)&#183;16(py)<br>
+									Private Terrace</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- 캘린더/예약 -->
+				<section class="sec3">
+					<div class="sec3_area">
+						<div class="check_availability">
+							<button>Check Availability</button>
+						</div>
+
+						<!-- 달력(캘린더) -->
+						<div class="booking_area">
+							<div class="booking">
+								<div class="booking_center_area">
+									<!-- 플러그인 -->
+									<div class="booking_box">
+										<div class="multi-select-calendar">
+											<div class="calendar"></div>
+										</div>
+										<div class="box">You selected date 2022-06-13 ~ 2022-06-16</div>
+									</div>
+
+									<div class="guest">
+										<h2>ROOM & GUEST</h2>
+										<div class="room">
+											<h3>객실</h3>
+											<button class="minus">&minus;</button><span class="num">1</span><button class="plus">&plus;</button>
+										</div><div class="adult">
+											<h3>성인</h3>
+											<button class="minus">&minus;</button><span class="num">2</span><button class="plus">&plus;</button>
+										</div><div class="child">
+											<h3>소아<ion-icon name="help-circle-outline"></ion-icon></h3>
+											<img src="img/tip.png" alt="소아는 36개월부터 만 12세까지">
+											<button class="minus">&minus;</button><span class="num">0</span><button class="plus">&plus;</button>
+										</div>
+									</div>
+
+									<div class="check">
+										<button><a href="#">Check Availability</a></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+
+				<!-- 캘린더/예약 -->
+				<section class="mobile-sec3">
+					<div class="sec3_area">
+						<div class="check_availability">
+							<button>Check Availability</button>
+						</div>
+
+						<!-- 달력(캘린더) -->
+						<div class="booking_area">
+							<div class="booking">
+								<div class="booking_center_area">
+									<button class="booking_close_btn"><b class="hdd">닫기</b><i class="fas regular fa-xmark"></i></button>
+									
+									<!-- <div class="booking_btn"></div> -->
+									<!-- 플러그인 : datepicker -->
+									<div class="booking_box">
+										<p>
+											<label for="startDate">CHECKIN</label>
+											<input type="text" onfocus="this.blur()" id="startDate" name="startDate">
+										</p>
+										
+										<p>
+											<label for="endDate">CHECKOUT</label>
+											<input type="text" onfocus="this.blur()" id="endDate" name="endDate">
+										</p>
+									</div>
+
+									<div class="guest">
+										<h2>ROOM & GUEST</h2>
+										<div class="room">
+											<h3>객실</h3>
+											<button class="minus">&minus;</button><span class="num">1</span><button class="plus">&plus;</button>
+										</div><div class="adult">
+											<h3>성인</h3>
+											<button class="minus">&minus;</button><span class="num">2</span><button class="plus">&plus;</button>
+										</div><div class="child">
+											<h3>소아<ion-icon name="help-circle-outline"></ion-icon></h3>
+											<img src="img/tip.png" alt="소아는 36개월부터 만 12세까지">
+											<button class="minus">&minus;</button><span class="num">0</span><button class="plus">&plus;</button>
+										</div>
+									</div>
+
+									<div class="check">
+										<button><a href="#">Check Availability</a></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+			</div>
+		</main>
+
+		
+
+		<footer>
+			<div class="footer_area">
+				<!-- 가운데 정렬 -->
+				<div class="center_area">
+					<!-- 주소 -->
+					<p class="address">27 EONJURO 85GIL&#44; YEOKSAM-DONG 723-3&#44; GANGNAMGU SEOUL</p>
+
+					<!-- 사업자정보 -->
+					<ul class="footer_list">
+						<li><strong>&#40;주&#41;베리모나코 오월호텔</strong></li>
+						<li><strong>대표자&#58;</strong> Kim Kunwoo</li>
+						<li><strong>사업자등록번호&#58;</strong>120&#45;81&#45;45479</li>
+					</ul>
+
+					<!-- 연락처 -->
+					<p class="tel"><strong>TEL&#46;</strong> <span>&#43;82 2 557 5001</span></p>
+					<p class="email"><strong>E&#45;MAIL&#46;</strong> <span><a href="#">INFO&#64;OWALLHOTEL&#46;COM</a></span></p>
+
+					<!-- 저작권 -->
+					<p class="copyright">COPYRIGHT &copy; 2020 KANGMINSEO. ALL RIGHTS RESERVED.</p>
+				</div>
+
+				<!-- 우측 정렬 -->
+				<div class="right_area">
+					<!-- 옵션 : 패밀리사이트(SISTER HOTELS)-->
+					<div class="select_common">
+						<select title="패밀리사이트">
+							<option value="">SISTER HOTELS</option>
+							<option value="">HOTEL MARIE</option>
+							<option value="">HOTEL APRIL</option>
+						</select>
+					</div>
+
+					<!-- 푸터 로고 -->
+					<p class="footer_logo"><a href="./index.html"><img src="img/k-logo_br.png" alt="로고2"></a></p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/basic.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

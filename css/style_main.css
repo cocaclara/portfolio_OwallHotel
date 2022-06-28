@@ -1,0 +1,444 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Noto+Sans+KR&display=swap');
+
+*{
+  margin: 0; padding: 0; box-sizing: border-box !important;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  font-family: 'Cairo', 'Noto Sans KR', sans-serif; /*영문,한글*/
+  font-weight: 300;
+  letter-spacing: 4px;
+  background-color: #e7e6e1;
+}
+ul,li{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+#wrap{width: 100%;overflow: hidden;}
+.hdd{display: none;}
+.mobile{display: none;}
+.mobile-sec3{display: none;}
+
+/* 메인 */
+.sec1{ width: 100%; height: 100vh; }
+.sec1 .mainImg{ width: 100%; height: 100%; }
+.sec1 .imgList{ width: 100%; height: 100%; }
+.sec1 .imgList li{
+  width: 100%; height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.sec1 .img1{ background-image: url('../img/home01.jpg'); z-index: 1;}
+.sec1 .img2{ background-image: url('../img/home02.jpg'); }
+.sec1 .img3{ background-image: url('../img/home03.jpg'); }
+.sec1 .img4{ background-image: url('../img/home04.jpg'); }
+.sec1 .img5{ background-image: url('../img/home05.jpg'); }
+
+
+/* 객실안내 */
+.sec2{padding:150px 100px 0;text-align: center;}
+.sec2 h2{font-size: 30px; padding-bottom: 20px;}
+.sec2>p{
+  padding-bottom: 70px;
+}
+.gallery ul{
+  max-width: 1900px;
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: 25fr 25fr 25fr 25fr; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+.gallery li{
+  vertical-align: top;
+}
+.gallery img{
+  width: 100%;
+}
+.gallery li p{
+  margin: 0 auto;
+}
+.gallery strong{
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.gallery .text{font-size: 14px;}
+
+
+/* 예약날짜 버튼(클릭 시 오픈)*/
+.check_availability{
+  border-top: 1px solid #937549;
+  margin-top: 5px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.check_availability button{
+  border: 2px solid #937549;
+  padding: 20px 50px;
+  box-shadow: 2px 3px 8px #888;
+  margin: 100px 0;
+  position: absolute;left: 50%;transform: translateX(-50%);
+  font-size: 20px; letter-spacing: 3px;
+  color: #937549;
+  font-weight: 400;
+  cursor: pointer;
+}
+.check_availability button:hover{
+  background-color: #937549;
+  color: #fff;
+}
+
+
+/****************캘린더/예약***************************/
+.sec3{margin-top:50px;padding:100px;}
+.booking_area{    /*.check_availability 클릭 시 오픈*/
+  display: none;
+
+  border: 1px solid #937549;
+  padding: 10px;box-sizing: border-box;
+  background-color: #fff;
+  overflow:initial;
+}
+.booking{
+  padding: 50px;box-sizing: border-box;
+  border: 1px solid #937549;
+  background-color: #fff;
+}
+.booking_center_area{
+  width: 700px;
+  margin: 50px auto 0;
+}
+.booking_center_area h2{
+  font-size: 18px;
+  color: #937549;
+}
+
+/* 객실/성인/소아 */
+.guest{
+  padding: 20px 10px 30px; box-sizing: border-box;
+  border-top: 1px solid #937549;
+  border-bottom: 1px solid #937549;
+  width: 100%;height: 100%;
+}
+.guest div{
+  margin: 0;
+  display: inline-block;
+  width: 33.333%;
+  height: 150px;
+  padding: 20px;
+  text-align: center;
+}
+.guest div h3{
+  font-size: 22px;
+}
+.guest div button{
+  background: transparent;
+  border: 2px solid #937549;
+  padding: 0 4px;
+  font-size: 16px;
+  color: #937549;
+  vertical-align: sub;
+  cursor: pointer;
+}
+.guest div span{
+  padding: 20px;
+  font-size: 40px;
+  vertical-align:middle;
+}
+.child{
+  position: relative;
+}
+.child h3{ margin-left: 10px;}
+.child ion-icon{cursor: pointer;}
+.child img{
+  max-width: 200px;
+  position: absolute;top: -62px;right: -112px;
+  display: none;
+}
+
+/* 체크 버튼 */
+.check{
+  border-top: 1px solid #937549;
+  margin-top: 5px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.check button{
+  border: 2px solid #937549;
+  background: #f4f2f0;
+  padding: 20px 50px;
+  box-shadow: 2px 3px 8px #888;
+  margin: 100px 0;
+  position: absolute;left: 50%;transform: translateX(-50%);
+  cursor: pointer;
+}
+.check button:hover{
+  background-color: #937549;
+}
+.check button a{
+  font-size: 20px; letter-spacing: 3px;
+  color: #937549;
+  font-weight: 400;
+}
+.check button:hover a{
+  color: #fff;
+}
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++*/
+/* 반응형 - 작은 데스크탑/태블릿 */
+@media all and (max-width: 1279px) and (min-width: 768px) {
+  /* ROOMS 객실안내 */
+  .sec2 ul{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sec2 .gallery .text{
+    color: #222;
+  }
+  
+  /* .sec3 예약날짜 버튼(클릭 시 오픈)*/
+  .check_availability{ height: 180px; }
+  .check_availability button{
+    padding: 20px;
+    margin: 70px 0;
+    font-size: 14px;
+  }
+  /* 캘린더/예약 */
+  .booking{ padding: 15px 20px 30px; }
+  .booking_center_area{ width: 500px; }
+
+  /* 객실/성인/소아 */
+  .guest{ padding: 10px; }
+  .guest div{ padding: 15px; }
+  .guest div h3{ font-size: 20px; }
+  .guest div button{
+    padding: 0 3px;
+    font-size: 14px;
+  }
+  .guest div span{
+    padding: 10px 20px;
+    font-size: 30px;
+  }
+  .child h3{ margin-left: 10px;}
+  .child img{
+    max-width: 180px;
+    top: -58px;right: -122px;
+  }
+  .check{ height: 180px; }
+  .check button{
+    padding: 20px;
+    margin: 70px 0;
+  }
+  .check button a{
+    font-size: 14px;
+  }
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++*/
+/* 반응형 - 모바일 & 작은 태블릿 */
+@media all and (min-width: 460px) and (max-width: 768px) {
+  .sec2{padding-top: 100px;}
+  .sec2>p {
+    font-size: 14px;
+    letter-spacing: 4;
+    padding: 50px 0 70px;
+  }
+  .gallery{
+    touch-action: none;
+    width: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .sec2 ul{
+    touch-action: none;
+    display: block;
+    width: 2453px;
+    max-width: 3200px;
+    position: relative;
+
+    transition: all 0.5s;
+  }
+  .sec2 .gallery li{
+    /* position: relative; left: 0; */
+    /* background: #fff; */
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin-right: 5px;
+  }
+  .sec2 .gallery li:first-child{
+    margin-left: -13px;
+  }
+  .sec2 .gallery li p.text{
+    display: none;
+  }
+
+  /****************모바일 - 캘린더/예약***************************/
+  .sec3{display: none;}
+  .mobile-sec3{
+    display: block;margin-top:50px;
+  }
+  .booking_area{    /*.check_availability 클릭 시 오픈*/
+    display: none;
+    /* display: block; */
+    width: 100%;
+    padding: 0;margin: 0;border: 0;
+    position: fixed;bottom: 0;z-index: 1;
+  }
+  .booking{
+    padding: 0;
+    border: 0;
+  }
+  .booking_center_area{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .booking_close_btn{
+    position: absolute;right: 20px; top: 10px;
+    border: none;
+    background-color: transparent;
+    color: #937549;
+    width: 30px;height: 30px;
+    display: block;
+    cursor: pointer;
+  }
+  .booking_close_btn i{
+    font-size: 40px;
+  }
+
+  .guest{padding: 20px;box-sizing: border-box;}
+  .guest div{height: 5em;}
+  .guest div h3{font-size: 16px;font-weight: normal;}
+  
+  .guest div span{
+    padding: 18px;
+    font-size: 16px;font-weight: bold;
+    vertical-align: middle;
+  }
+  .check{height: 10em;}
+  .check button{
+    margin: 2em auto;
+  }
+  .child img{
+    max-width: 100px;
+    top: -20px;
+    right: -20px;
+  }
+
+  footer.hide{
+    display: none;
+  }
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++*/
+/* 반응형 - 모바일 */
+@media all and (max-width: 460px) {
+  .sec2{
+    padding: 100px 65px 80px;
+  }
+  .sec2>p {
+    font-size: 14px;
+    letter-spacing: 2;
+    padding: 40px 0 70px;
+  }
+  .gallery{
+    width: 270px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .sec2 ul{
+    display: block;
+    width: 2107px;
+    max-width: 3200px;
+    position: relative;
+
+    transition: all 0.5s;
+  }
+  .sec2 .gallery li{
+    /* position: relative; left: 0; */
+    /* background: #fff; */
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+    margin-right: 5px;
+  }
+  .sec2 .gallery li:first-child{
+    margin-left: -45px;
+  }
+  .sec2 .gallery li img{
+    width: 250px;
+  }
+  .sec2 .gallery li p.text{
+    display: none;
+  }
+
+  /****************모바일 - 캘린더/예약***************************/
+  .sec3{display: none;}
+  .mobile-sec3{
+    display: block;margin-top:50px;
+  }
+  .booking_area{    /*.check_availability 클릭 시 오픈*/
+    display: none;
+    /* display: block; */
+    width: 100%;
+    padding: 0;margin: 0;border: 0;
+    position: fixed;bottom: -5px;z-index: 1;
+  }
+  .booking{
+    padding: 0;
+    border: 0;
+  }
+  .booking_center_area{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .booking_close_btn{
+    position: absolute;right: 20px; top: 10px;
+    border: none;
+    background-color: transparent;
+    color: #937549;
+    width: 30px;height: 30px;
+    display: block;
+    cursor: pointer;
+  }
+  .booking_close_btn i{
+    font-size: 40px;
+  }
+
+  .guest{padding: 10px;box-sizing: border-box;}
+  .guest div{height: 5em;}
+  .guest div h3{font-size: 12px;font-weight: normal;}
+  .guest div span{
+    padding: 0 9px 0 12px;
+    font-size: 14px;font-weight: bold;
+    vertical-align: middle;
+  }
+  .guest div button{
+    padding: 0 2px;
+    font-size: 12px;
+    vertical-align: middle;
+  }
+
+  .check{height: 10em;}
+  .check button{
+    margin: 2em auto;
+  }
+  .child img{
+    max-width: 80px;
+    top: -15px;
+    right: 35px;
+  }
+
+  footer.hide{
+    display: none;
+  }
+}

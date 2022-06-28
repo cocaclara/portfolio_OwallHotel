@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+.booking_box{
+  margin-bottom: 5em;
+}
+
+.pignose-calendar {
+  width: 100%;
+  /* padding: 2em; */
+  max-width: none;  
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+}
+.pignose-calendar .pignose-calendar-top {
+  padding: 2.6em 0 4em;
+  background-color: #fff;
+  border-bottom: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+.pignose-calendar .pignose-calendar-top .pignose-calendar-top-month{
+  font-size: 280%;
+  margin-top: -0.7rem;
+  font-weight: 800;
+  letter-spacing: 10px;
+}
+.pignose-calendar .pignose-calendar-top .pignose-calendar-top-year{
+  color: #937549;
+  font-weight: 600;
+  font-size: 96%;
+  margin-top: -2rem;
+}
+/* < 이전, > 다음 버튼 */
+.pignose-calendar .pignose-calendar-top .pignose-calendar-top-nav{
+  z-index: 1;
+}
+.pignose-calendar .pignose-calendar-top .pignose-calendar-top-nav .pignose-calendar-top-icon {
+  color: #937549;
+  font-size: 350%;
+}
+/* 비활성화 */
+.pignose-calendar .pignose-calendar-top .pignose-calendar-top-nav .pignose-calendar-top-icon.off {
+  color: #aaa;
+  cursor: vertical-text;
+}
+.pignose-calendar .pignose-calendar-top .pignose-calendar-top-nav.pignose-calendar-top-next {
+  margin-right: 3.2em;
+}
+
+/* 일 수 */
+.pignose-calendar .pignose-calendar-unit.pignose-calendar-unit-active a {
+  background-color: #937549;
+}
+.pignose-calendar .pignose-calendar-body .pignose-calendar-row {
+  font-size: 120%;
+  font-weight: 400;
+}
+.pignose-calendar .pignose-calendar-unit a {
+  color: #333;
+}
+/* 일 수(range) */
+.pignose-calendar .pignose-calendar-unit.pignose-calendar-unit-range a {
+    background-color: #dcd3c5;
+}
+/* 오늘 이전 날짜 비활성화 */
+.pignose-calendar .pignose-calendar-unit.pignose-calendar-unit-disabled a {
+  opacity: 0.35;
+  background-color: transparent;
+  cursor: text;
+}
+
+/* 캘린더 밑에 박스 */
+.box{
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 600;
+  margin-top: 2em;
+  padding: 1.6em;box-sizing: border-box;
+  text-align: center;
+  background-color: #937549;
+  color: #fff;
+  border-radius: 10px;
+  /* border: 1px solid #d8d8d8; */
+  box-shadow: 0 4px 12px rgb(0 0 0 / 25%);
+  -o-box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+  -moz-box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+  -webkit-box-shadow: 0 4px 12px rgb(0 0 0 / 25%);
+  overflow: hidden;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++*/
+/* 반응형 - 모바일 & 작은 태블릿 */
+@media all and (max-width: 768px) {
+  .booking_box{
+    /* background: red; */
+    padding: 1.8em;
+    margin-top: 1em;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    height: 8em;
+  }
+  .booking_box p{
+    padding: 3px 0;
+  }
+  .booking_box label{
+    display: inline-block;
+    width: 7em;
+    font-weight: bold;
+  }
+  .booking_box input{
+    text-align: center;
+    width: 10em;
+    height: 34px;
+    font-size: 1.1rem;
+    background-color: #d2c7b6;
+    vertical-align: middle;
+  }
+
+  /* 캘린더 */
+  .ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all{
+    background-color: #fff;
+    border: 2px solid #937549;
+    border-radius: 0;
+  }
+  .ui-widget-content{
+    background: #fff;
+  }
+  .ui-datepicker-calendar{
+    background-color: #fff;
+  }
+  /* 화살표버튼 */
+  .ui-datepicker-next.ui-corner-all.ui-state-hover, .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover{
+    border: none;
+    background: transparent;
+  }
+  /* 년월 배경 */
+  .ui-widget-header {
+    border: 1px solid #937549;
+    background: linear-gradient(0deg, #bea47e 0%, #937549 34%, #937549 100%);
+  }
+  /* 요일 */
+  span[title="Sunday"], span[title="Saturday"]{
+    color: red;
+  }
+
+  /* 일수 */
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: transparent;
+    color: #333;
+    width: 2.2rem;height: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .ui-state-default.ui-state-hover{
+    background: #937549;
+    color: #fff;
+  }
+  .ui-state-default.ui-state-active.ui-state-hover{
+    background: #d2c7b6;
+    color: #333;
+  }
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++*/
+/* 반응형 - 모바일 */
+@media all and (max-width: 459px) {
+  .booking_box{
+    /* background: red; */
+    padding: 2em;
+    margin-top: 2em;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    height: 8em;
+  }
+  .booking_box p{
+    padding: 3px 0;
+  }
+  .booking_box label{
+    display: inline-block;
+    width: 7em;
+    font-weight: bold;
+  }
+  .booking_box input{
+    text-align: center;
+    width: 10em;
+    height: 34px;
+    font-size: 1.1rem;
+    background-color: #d2c7b6;
+    vertical-align: middle;
+  }
+}
